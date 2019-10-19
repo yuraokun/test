@@ -1,17 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
+<html lang="ja">
+  <head>
+    <title>space curry</title>
 
-<body>
-  <div>
-    <h1>hello!</h1>
-  </div>
-</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, inicial-scale=1,maximum-scale=1,user-scaleble=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css"
+    />
 
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+
+    <script>
+      (function(d) {
+        var config = {
+            kitId: "mfb7icb",
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="main_logo">
+        <div class=" main_logo">
+          <nav>
+            <h1 class="logo home">SPACE CURRY</h1>
+            <h1 class="logo2 home">SPACE CURRY</h1>
+            <ul class="main_nav">
+              <li class="about"><a href="#">Space curryについて</a></li>
+              <li class="openings"><a href="#">OPENING HOURS</a></li>
+              <li class="contacts"><a href="#">CONTACT</a></li>
+            </ul>
+            <a class="responsive_nav"><i class="fas fa-bars fa-2x"></i></a>
+            <ul class="main_nav2">
+              <li class="about"><a href="#">Space curryについて</a></li>
+              <li class="openings"><a href="#">OPENING HOURS</a></li>
+              <li class="contacts"><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="main-text">
+        <div id="main">
+          <div id="main_pictures">
+            <div id="main_message">
+              <p>Organic Spices make us helthier</p>
+              <div class="main_title">
+                <img id="main_title" src="images/main_title.png" />
+              </div>
+              <div class="scroll_contact">
+                <a href="#" class="btn btn-outline ">お問い合わせはこちら</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="introduction">
+      <div class="row">
+        <h2>SPACE CURRYについて<span class="logo-facebook"></span></h2>
+        <p class="intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          omnis aut, expedita ad perferendis id ipsam, optio dolorem, explicabo
+          facilis minus dignissimos maxime. Placeat ab esse molestias facilis!
+          Autem, amet.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col  span-1-of-3 workpoints">
+          <div class="vegi">
+            <img src="images/vegi.jpg" alt="" />
+          </div>
+          <h3>hello</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ea
+            sunt id dolore soluta sit consequatur repudiandae dolorum fugiat
+            inventore. Ut sint adipisci reprehenderit, aliquam quibusdam quasi
+            autem officiis molestias.
+          </p>
+        </div>
+        <div class="col  span-1-of-3 workpoints">
+          <div class="vegi">
+            <img src="images/spices.jpg" alt="" />
+          </div>
+          <h3>hello</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            quisquam. Doloribus, iure facere laborum incidunt similique ratione
+            sit, debitis, aut iusto corrupti perferendis. Nemo architecto a
+            aliquid dicta ea rerum!
+          </p>
+        </div>
+        <div class="col  span-1-of-3  workpoints">
+          <div class="vegi">
+            <img src="images/chef.jpg" alt="" />
+          </div>
+          <h3>hello</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            quisquam. Doloribus, iure facere laborum incidunt similique ratione
+            sit, debitis, aut iusto corrupti perferendis. Nemo architecto a
+            aliquid dicta ea rerum!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--- curry picture -->
+
+    <div class="curry_photo">
+      <ul class="curry_photo_box">
+        <li>
+          <figure class="photo">
+            <img src="images/curry_picture2.png" alt="" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photo">
+            <img src="images/curry_picture3.png" alt="" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photo"><img src="images/curry3.jpg" alt="" /></figure>
+        </li>
+        <li>
+          <figure class="photo">
+            <img src="images/curry_picture1.png" alt="" />
+          </figure>
+        </li>
+      </ul>
+    </div>
+
+    <!-----  opening hours ------->
+
+    <section class="opening">
+      <div class="row">
+        <h2>OPENING HOURS</h2>
+      </div>
+      <div class="row">
+        <div class="col  span-1-of-2">
+          <img src="images/interior.jpg" />
+        </div>
+        <div class="col  span-1-of-2">
+          <div id="interior">
+            <p>
+              異国の雰囲気漂うリラックスな空間で<br />フレンドリーなインド人シェフがお待ちしてます。
+            </p>
+            <div class="day">
+              <div class="dayof">[月〜金]</div>
+              <div>ランチ：11:30〜15:00　LO 14:30</div>
+              <div>ディナー：17:00〜23:00　LO 22:30</div>
+            </div>
+            <div class="day2">
+              <div><span class="dayof">[土]</span> 11:30〜23:00　LO 22:30</div>
+
+              <div><span class="dayof">[日]</span> 11:30〜22:00　LO 21:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- contact form ---->
+
+    <section class="booking row contact">
+      <h2>CONTACT</h2>
+      <p>
+        Lorem ipsum dolor.<br />
+        sit amet consectetur adipisicing elit. Nobis, possimus v.
+      </p>
+      <div class="row">
+        <form>
+          <div class="form">
+            <div class="col span-1-of-3">
+              <label>お名前</label>
+            </div>
+            <div class="col span-2-of-3 ">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+            </div>
+          </div>
+          <div class="form">
+            <div class="col span-1-of-3">
+              <label for="lname">メールアドレス</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your email.."
+              />
+            </div>
+          </div>
+
+          <div class="form">
+            <div class="col span-1-of-3">
+              <label for="subject">内容</label>
+            </div>
+            <div class="col span-2-of-3">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height:200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form">
+            <div class="col span-1-of-3">
+              <label for="subject">&nbsp;</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="submit" value="送信する" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer row">
+        <div class="col span-2-of-2">
+          <ul class="footer_nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Space curryについて</a></li>
+            <li><a href="#">OPENING HOURS</a></li>
+            <li><a href="#">ACCESS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <ul class="social_icons col span-2-of-2">
+            <li>
+              <a href="#">
+                <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="logo-instagram" class="instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="col span-1-of-2">
+            <div class="address">
+              ADDRESS<br />〒810-0041 福岡県福岡市中央区大名0丁目0−0000
+            </div>
+          </div>
+
+          <div class="col span-1-of-2">
+            <small class="copyright"
+              >&copy;2019.space curry All Right Reserved</small
+            >
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
